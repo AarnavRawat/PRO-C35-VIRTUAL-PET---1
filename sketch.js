@@ -68,11 +68,11 @@ function draw() {
   text("PRESS UP_ARROW TO FEED DRAGO MILK", 400, 25);
   //function call to feed the dog
   if (keyDown(UP_ARROW)) {
-    foodS.updateFoodAmount(foodS -1);
+    updateFoodAmount(foodS -1);
     dog.addImage(happyDog);
   }
   fill("white")
-  text("FOOD REMAINING", 500, 150);
+  text("FOOD REMAINING:"+foodS, 500, 150);
   //write code to read fedtime value from the database 
 
 
