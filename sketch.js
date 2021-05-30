@@ -81,3 +81,9 @@ function draw() {
 
   drawSprites();
 }
+
+function updateFoodAmount(foodAmountInput) {
+  database.ref('/').update({
+    foodAmount: foodAmountInput
+  });
+}
