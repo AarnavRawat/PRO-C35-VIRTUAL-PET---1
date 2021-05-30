@@ -37,12 +37,6 @@ class Food {
      function definition to change existing value of gameState to a 
      new one based on the value of paramter passed in the database
   */
-  updateFoodAmount(foodAmountInput) {
-    database.ref('/').update({
-      foodAmount: foodAmountInput
-    });
-  }
-
   display() {
     var x = 80;
     var y = 100;
