@@ -39,8 +39,10 @@ function setup() {
   //creating food 
   foodObj = new Food();
 
+  
   foodStock = database.ref('foodAmount');
-  //foodStock.on("value", readStock);
+  foodStock.on("value", function (data);
+  foodS = data.val();
 
   //creating the dog
   dog = createSprite(800, 200, 150, 150);
@@ -64,7 +66,7 @@ function draw() {
   text("PRESS UP_ARROW TO FEED DRAGO MILK", 400, 25);
   //function call to feed the dog
   if (keyDown(UP_ARROW)) {
-    foodStock.updateFoodAmount(foodStock -1);
+    foodS.updateFoodAmount(foodS -1);
     dog.addImage(happyDog);
   }
   text("FOOD REMAINING", 500, 150);
