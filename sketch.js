@@ -41,7 +41,7 @@ function setup() {
 
   
   foodStock = database.ref('foodAmount');
-  foodStock.on("value", function (data);
+  foodStock.on("value", function (data))
   foodS = data.val();
 
   //creating the dog
